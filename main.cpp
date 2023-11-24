@@ -29,11 +29,15 @@ void deshacerMovimiento(std::vector<std::vector<char>>& tablero, int columna) {
 
 void imprimirTablero(const std::vector<std::vector<char>>& tablero) {
     for (int i = 0; i < FILAS; ++i) {
+         std::cout << "|";
         for (int j = 0; j < COLUMNAS; ++j) {
-            std::cout << tablero[i][j] << ' ';
+            std::cout << tablero[i][j] << "|";
         }
+        
         std::cout << '\n';
+        
     }
+    
     std::cout << '\n';
 }
 
