@@ -11,7 +11,7 @@ public:
     int hacerMovimiento(const Tablero& tablero) const override {
         int columna;
         do {
-            cout << "Elige una columna (0-" << COLUMNAS - 1 << "): ";
+            cout << "Elige una columna (1-" << COLUMNAS  << "): ";
             cin >> columna;
         } while (!tablero.validarColumna(columna) || tablero.columnaLlena(columna));
         return columna;
